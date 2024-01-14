@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cv-flask"
+version = "0.1.0"
+description = "CV single page app in Flask"
+authors = ["TomasSmarda <tom.smarda@email.cz>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.0"
+gunicorn = "^21.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
