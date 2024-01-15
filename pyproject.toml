@@ -5,6 +5,7 @@ description = "CV single page app in Flask"
 authors = ["TomasSmarda <tom.smarda@email.cz>"]
 readme = "README.md"
 
+
 [tool.poetry.dependencies]
 python = "^3.10"
 flask = "^3.0.0"
