@@ -1,2 +1,5 @@
 .venv
 __pycache__
+converted_cert.crt
+ssh_klic
+ssh_klic.pub

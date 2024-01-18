@@ -8,8 +8,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-flask = "^3.0.0"
-gunicorn = "^21.2.0"
+flask = "=3.0.0"
+gunicorn = "=21.2.0"
 
 
 [build-system]

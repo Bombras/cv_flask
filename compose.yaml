@@ -1,21 +1,11 @@
-version: '3'
-
 services:
-
-  flask_app:
-    container_name: cv_flask
-    restart: always
-    build: .
+  flask_cv:
+    build: docker_app/.
     ports:
-      - "8000:8000"
-    command: gunicorn -w 2 -b :8000 cv_main:app
-
-
+      - "8001:8000"
   nginx:
-    container_name: nginx
-    restart: always
-    build: ./nginx
+    build: docker_server/.
     ports:
       - "80:80"
     depends_on:
-      - dash_app
+      - flask_cv
