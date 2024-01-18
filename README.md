@@ -1,19 +1,8 @@
-sudo service docker start  // nebo // dockerd
-gunicorn -w 2 'cv_main:app'
+on VPS:
+install Docker
+git clone cv_flask
+navigate to cv_flask
+run sudo docker compose build
+run sudo docker compose up -d
 
-
-sudo docker build -t cv_flask .
-
-
-sudo docker ps -a
-sudo docker images
-
-sudo docker rmi -- delete images
-sudo docker rm --delete containers
-
-sudo docker run -t -d image_id
-sudo docker logs 16010ea5ad1c
-
-
-sudo docker exec -it container_id bash
-docker system prune
+go to smarda.name
