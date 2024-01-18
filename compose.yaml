@@ -7,5 +7,10 @@ services:
     build: docker_server/.
     ports:
       - "80:80"
+      - "443:443"
     depends_on:
       - flask_cv
+    restart: always
+    volumes:
+      - ./nginx/conf/:/etc/nginx/conf.d/:ro
+      - ./certbot/www:/var/www/certbot/:ro
