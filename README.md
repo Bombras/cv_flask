@@ -24,7 +24,7 @@ I have minimal VPS with 5GB storage only.
 - ask for certificate
     - `docker compose run --rm  certbot certonly --webroot --webroot-path /var/www/certbot/ -d smarda.name`
 - go to docker nginx container and uncomment the block in nginx.conf with the 443(ssl) part:
-    - docker exec -it cv_flask-nginx-1 sh
+    - `docker exec -it cv_flask-nginx-1 sh`
 - restart docker containers to load certificates `docker compose restart`
 
 After 3 months run this to renew certificates
